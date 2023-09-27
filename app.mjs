@@ -43,6 +43,9 @@ app.get('*', (req, res) => {
 })
 
 // Puerto
-app.listen(port, () => {
+/*app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
-})
+})*/
+app.listen(port, '0.0.0.0', () => {
+  console.log(`Escuchando el puerto ${port}`);
+});
